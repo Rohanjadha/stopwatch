@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@300;400;500;700;900;&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Container for the timer display and actions -->
+
+    <div class="container">
+
+        <!-- Display area for the timer -->
+
+        <div class="timer-display">
+            00 : 00 : 00 : 00
+        </div>
+        
+        <!-- List to display recorded laps -->
+
+        <ul class="laps"></ul>
+        <!-- Action buttons for controlling the timer -->
+        <div class="action">
+            <!-- Button to start the timer -->
+            <button id="startTimer" onclick="start()">Start</button>
+            <!-- Button to stop the timer -->
+            <button id="pauseTimer" onclick="stop()">Stop</button>
+            <!-- Button to reset the timer -->
+            <button id="resetTimer" onclick="reset()">Reset</button>
+            <!-- Button to restart the timer -->
+            <button id="restartTimer" onclick="restart()">Restart</button>
+            <!-- Button to record a lap -->
+            <button id="lap" onclick="lap()">Lap</button>
+            <!-- Button to reset the laps -->
+            <button id="resetlap" onclick="resetlap()">Reset Laps</button>
+        </div>
+    </div>
+
+    <!-- Link to the JavaScript file -->
+    <script src="stopwatch.js"></script>
+
+</html>
